@@ -2,7 +2,7 @@
 
 **Influences**: [mxstbr](https://github.com/mxstbr/react-boilerplate) and [tbash](https://github.com/tbash/react-starter)
 
-So whats the difference? Well no much, I just removed [redux-saga](https://github.com/yelouafi/redux-saga)
+So whats the difference? Well not much, I just removed [redux-saga](https://github.com/yelouafi/redux-saga)
 and added [redux-observable](https://github.com/redux-observable/redux-observable)
 
 > bc rx logo is like super dope. Jay Phelps is not joking when he says get a good logo first.
