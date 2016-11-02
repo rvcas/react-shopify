@@ -1,0 +1,31 @@
+{
+  "name": "rx-obv-starter",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "plop": "^1.5.0",
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.6",
+    "redux": "^3.6.0",
+    "redux-immutable": "^3.0.8",
+    "redux-observable": "^0.12.1",
+    "reselect": "^2.5.4",
+    "rxjs": "^5.0.0-rc.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
