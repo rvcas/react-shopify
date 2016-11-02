@@ -1,4 +1,4 @@
-# Some Sort Boilerplate
+# rx obv
 
 **Influences**: [mxstbr](https://github.com/mxstbr/react-boilerplate) and [tbash](https://github.com/tbash/react-starter)
 
