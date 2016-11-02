@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -9,17 +9,13 @@ import {
 import { doPing } from './actions';
 import './styles.css';
 
-export class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>is pinging: {this.props.isPinging.toString()}</h1>
-        <button onClick={this.props.ping}>Start PING</button>
-        {React.Children.toArray(this.props.children)}
-      </div>
-    )
-  }
-}
+const App = ({ isPinging, ping, children }) => (
+  <div>
+    <h1>is pinging: {isPinging.toString()}</h1>
+    <button onClick={ping}>Start PING</button>
+    {React.Children.toArray(children)}
+  </div>
+);
 
 App.propTypes = {
   isPinging: React.PropTypes.bool,
