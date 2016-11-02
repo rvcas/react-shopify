@@ -27,5 +27,5 @@ I figured it was appropriate to do the classicly epic ping example, but that mig
 
 ## TODO
 
-* maybe some generators?? :/
+* maybe some generators?? (file templates that is)
 * more intricate example for learning
