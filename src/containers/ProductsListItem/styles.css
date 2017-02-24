@@ -1,0 +1,11 @@
+.product-list__item {
+  width: 15%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.product-image {
+  margin: -600px;
+  border: solid 1px black;
+}
+

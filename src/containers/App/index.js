@@ -1,39 +1,27 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import Helmet from 'react-helmet';
 
-import {
-  selectPing,
-} from './selectors';
+import NavBar from '../NavBar';
+import Footer from '../../components/Footer';
 
-import { doPing } from './actions';
-import './styles.css';
+import "./styles.css";
 
-const App = ({ isPinging, ping, children }) => (
-  <div>
-    <h1>is pinging: {isPinging.toString()}</h1>
-    <button onClick={ping}>Start PING</button>
-    {React.Children.toArray(children)}
+const App = ({ children, location }) => (
+  <div className="app-wrapper">
+    <Helmet
+      titleTemplate="%s - HHS"
+      defaultTitle="HHS"
+      meta={[
+        { name: 'Shop at HHS', content: 'clothes' },
+      ]} />
+    { location.pathname === "/" ? null : <NavBar /> }
+
+    <main className="main-wrapper">
+      {React.Children.toArray(children)}
+    </main>
+
+    { location.pathname === "/" ? null : <Footer /> }
   </div>
 );
 
-App.propTypes = {
-  isPinging: React.PropTypes.bool,
-  ping: React.PropTypes.func,
-  children: React.PropTypes.node,
-};
-
-const mapDispatchToProps = (dispatch) => {
-  const dispatchProps = {
-    ping: () => dispatch(doPing()),
-    dispatch,
-  };
-
-  return dispatchProps;
-};
-
-const mapStateToProps = createStructuredSelector({
-  isPinging: selectPing(),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

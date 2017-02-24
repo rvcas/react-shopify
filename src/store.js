@@ -7,7 +7,7 @@ import rootEpic from './epics';
 import createReducer from './reducers';
 
 const epicMiddleware = createEpicMiddleware(rootEpic);
-const devtools = window.devToolsExtension || (() => (noop) => noop);
+const devtools = window.devToolsExtension || (() => (noop) => noop)
 
 export default function configureStore(initialState = {}, history) {
   const middlewares = [

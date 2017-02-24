@@ -1,0 +1,13 @@
+.navlink-wrapper {
+  padding: 0 0 0.5em 1.5em;
+}
+
+.navlink {
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.navlink-text {
+  text-transform: capitalize;
+  color: black;
+}

@@ -1,0 +1,12 @@
+.productspage-wrapper {
+  margin: 0;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.prods-wrapper {
+  margin-top: 120px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}

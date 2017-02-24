@@ -1,0 +1,12 @@
+.navbar-wrapper {
+  margin: 0 auto;
+  width: 15%;
+  padding: 1.618rem;
+  position: fixed;
+  height: 100%;
+}
+
+.navbar-list {
+  margin-top: 4em;
+  padding: 0 0 0 1.5em;
+}

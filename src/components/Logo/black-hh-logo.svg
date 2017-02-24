@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="395px" height="445px" viewBox="0 0 395 445" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>black-hh-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M348,151 L268,151 L268,86 L221,86 L221,151 L173,151 L173,0 L127,0 L127,237 L46,237 L46,86 L0,86 L0,445 L46,445 L46,278 L127,278 L127,361 L173,361 L173,278 L221,278 L221,445 L268,445 L268,192 L348,192 L348,361 L395,361 L395,0 L348,0 L348,151 Z M221,192 L221,237 L173,237 L173,192 L221,192 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="395" height="445" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="black-hh-logo" stroke="#000000" mask="url(#mask-2)" stroke-width="2" fill="#000000" xlink:href="#path-1"></use>
+    </g>
+</svg>

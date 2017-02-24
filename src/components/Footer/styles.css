@@ -1,0 +1,11 @@
+.footer-wrapper {
+  width: 85%;
+  margin: auto 0 0 auto;
+  padding-right: 0.7em;
+}
+
+.footer-text {
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
+}

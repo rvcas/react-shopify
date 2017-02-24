@@ -1,1 +1,11 @@
-/* put something here eventually */
+.app-wrapper {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.main-wrapper {
+  width: 85%;
+  margin: 0 0 0 auto;
+}

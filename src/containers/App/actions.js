@@ -1,16 +1,29 @@
 import {
-  PING,
-  PONG,
+  LOAD_PRODUCTS,
+  LOAD_PRODUCTS_SUCCESS,
+  LOAD_PRODUCTS_ERROR,
 } from './constants';
 
-export const doPing = () => {
+export const loadProducts = () => {
   return {
-    type: PING,
+    type: LOAD_PRODUCTS,
   };
 };
 
-export const doPong = () => {
+export const productsLoaded = prods => {
   return {
-    type: PONG,
+    type: LOAD_PRODUCTS_SUCCESS,
+    payload: {
+      prods,
+    },
   };
-};
+}
+
+export const productLoadingError = error => {
+  return {
+    type: LOAD_PRODUCTS_ERROR,
+    payload: {
+      error,
+    },
+  };
+}

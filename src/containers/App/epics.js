@@ -1,11 +1,24 @@
+import { Observable as Obsv } from 'rxjs';
+
+import shop from '../../utils/shop';
+
 import {
-  PING,
+  LOAD_PRODUCTS,
 } from './constants';
-import { doPong } from './actions';
 
-const pingEpic = action$ =>
-  action$.ofType(PING)
-         .delay(1000)
-         .mapTo(doPong());
+import {
+  productsLoaded,
+  productLoadingError,
+} from './actions';
 
-export default pingEpic;
+const { all } = shop();
+
+const appEpic = action$ =>
+  action$.ofType(LOAD_PRODUCTS)
+         .mergeMap( () =>
+           Obsv.from(all('products'))
+               .map(productsLoaded)
+               .catch(productLoadingError)
+         );
+
+export default appEpic;

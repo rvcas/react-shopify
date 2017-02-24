@@ -7,6 +7,21 @@ const selectPing = () => createSelector(
   (appState) => appState.get('isPinging'),
 );
 
+const selectError = () => createSelector(
+  selectApp(),
+  (appState) => appState.get('error'),
+);
+
+const selectLoading = () => createSelector(
+  selectApp(),
+  (appState) => appState.get('loading'),
+);
+
+const selectProducts = () => createSelector(
+  selectApp(),
+  (appState) => appState.get('products'),
+);
+
 const selectLocationState = () => {
   let prevRoutingState;
   let prevRoutingStateJS;
@@ -25,5 +40,8 @@ const selectLocationState = () => {
 
 export {
   selectPing,
+  selectError,
+  selectLoading,
+  selectProducts,
   selectLocationState,
 };

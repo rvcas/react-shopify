@@ -1,0 +1,15 @@
+.logo-wrapper {
+  margin-top: 6em;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  /* animation: logo-spin 10s linear; */
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(180deg); }
+}
