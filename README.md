@@ -6,6 +6,8 @@ I built a store with shopify using a bunch of react based tooling.
 
 ## TODO
 * Explain it all
+* Accidentally placed some containers in components
+  folder and vice verse (my bad)
 * Add some features
   * Cart Modal (wasn't allowed to come along)
   * Cart Action (same reason^)
